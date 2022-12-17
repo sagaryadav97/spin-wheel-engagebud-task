@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+@layer components {
+  .my-custom-style {
+    -webkit-clip-path: polygon(0 12%, 0 90%, 100% 50%);
+    clip-path: polygon(0 12%, 0 90%, 100% 50%);
+    height: 73%;
+    width: 50%;
+    background: azure;
+    transform-origin: 104% 50%;
+    position: absolute;
+    top: 80px;
+    /* transform-origin: 317px 477px; */
+    transform: rotate(0);
+    display: flex;
+    color: azure;
+    align-items: center;
+    justify-content: center;
+  }
+  .shape:before {
+    content: '';
+    width: 398px;
+    height: 38px;
+    background: #00c000;
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+  /* .my-custom-style {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 300px 175px 0;
+    border-color: #19c transparent;
+    transform-origin: 175px 315px;
+    left: 120px;
+    top: 0;
+    position: absolute;
+    opacity: 1;
+    transform: rotate(0deg);
+    z-index: 1000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }*/
+  .txt-ct{
+    /* margin-top: -350px; */
+    transform: rotate(275deg);
+    width: 120px;
+    margin-left: -60px;
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .br1{
+    border-color: #19c transparent;
+    transform: rotate(0deg);
+    background: linear-gradient(180deg, #E50101 0%, #FF6F6F 100%);
+    color: #FFFFFF;
+  }
+  .br2{
+    border-color: rgb(204, 201, 17) transparent;
+    transform: rotate(calc(1 * 60deg));
+    background: linear-gradient(180deg, #EFEFD1 0%, #F1F1F1 100%);
+    color: #171814;
+  }
+  .br3{
+    border-color: rgb(98, 17, 204) transparent;
+    transform: rotate(calc(2 * 60deg));
+    background: linear-gradient(180deg, #E50101 0%, #FF6F6F 100%);
+    color: #FFFFFF;
+  }
+  .br4{
+    border-color: rgb(198, 17, 204) transparent;
+    background: linear-gradient(180deg, #EFEFD1 0%, #F1F1F1 100%);
+    color: #171814;
+    transform: rotate(calc(3 * 60deg));
+  }
+  .br5{
+    border-color: rgb(204, 45, 17) transparent;
+    transform: rotate(calc(4 * 60deg));
+    background: linear-gradient(180deg, #E50101 0%, #FF6F6F 100%);
+    color: #FFFFFF;
+  }
+  .br6{
+    border-color: rgb(17, 76, 204) transparent;
+    background: linear-gradient(180deg, #EFEFD1 0%, #F1F1F1 100%);
+    color: #171814;
+    transform: rotate(calc(5 * 60deg));
+  } 
+}
