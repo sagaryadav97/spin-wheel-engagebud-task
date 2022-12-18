@@ -18,23 +18,13 @@
     background: azure;
     transform-origin: 104% 50%;
     position: absolute;
-    top: 80px;
+    /* top: 80px; */
     /* transform-origin: 317px 477px; */
     transform: rotate(0);
     display: flex;
     color: azure;
     align-items: center;
     justify-content: center;
-  }
-  .shape:before {
-    content: '';
-    width: 398px;
-    height: 38px;
-    background: #00c000;
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 1px;
   }
   /* .my-custom-style {
     width: 0;
@@ -57,9 +47,9 @@
     /* margin-top: -350px; */
     transform: rotate(275deg);
     width: 120px;
-    margin-left: -60px;
+    /* margin-left: -60px; */
     font-weight: 800;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
   .br1{
     border-color: #19c transparent;
